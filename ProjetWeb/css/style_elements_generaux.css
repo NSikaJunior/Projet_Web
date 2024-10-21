@@ -1,0 +1,138 @@
+/* ------------------------------------------------------------------- */
+/* ---------------- Style des éléments généraux ---------------------- */
+/* ------------------------------------------------------------------- */
+
+/* Cette page css permet de gérer les éléments qui sont communs à toutes les pages */
+
+/* ----------------------------- Police ------------------------------ */
+/* Importation des polices */
+/* Police poppins regular */
+@font-face {
+    font-family: "Poppins";
+    src: url(../polices/Poppins/Poppins-Medium.ttf);
+}
+
+/* Police poppins bold */
+@font-face {
+    font-family: "Poppins_bold";
+    src: url(../polices/Poppins/Poppins-SemiBold.ttf);
+}
+
+/* Police poppins extra bold */
+@font-face {
+    font-family : "Poppins_extra_bold";
+    src: url(../polices/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family : "Poppins_italic";
+    src: url(../polices/Poppins/Poppins-Italic.ttf);
+}
+
+/* Police panton rust */
+@font-face {
+    font-family : "Panton_rust_heavy";
+    src: url(../polices/Panton_rust/PantonRustScrSmBold-Gr.ttf);
+}
+
+/* Style de la police du site */
+* {
+    font-family : "Poppins";
+}
+/* ------------------------------------------------------------------- */
+
+/* ---------------------------- Bannière ----------------------------- */
+/* Style de la bannière du site */
+header {
+    background-color : rgb(255, 255, 255);
+    padding : .5%;
+}
+
+/* Style du logo et du nom du site */
+header div div a {
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : space-between;
+    text-decoration : none;
+    color : rgb(0, 0, 0);
+}
+
+/* Position des éléments de la bannière */
+header div {
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : space-evenly;
+}
+
+/* Style des boutons de la bannière */
+.bouton_ban {
+    background-color: rgb(132, 205, 239);
+    border : solid 3px rgb(0, 0, 0); 
+    border-radius : .5cm;
+    text-decoration : none;
+    margin : auto;
+}
+
+header div a {
+    text-decoration : none;
+    margin : auto;
+    color : rgb(0, 0, 0);
+}
+
+h1 {
+    font-family : "Poppins_bold";
+}
+/* ------------------------------------------------------------------- */
+
+/* ------------------------ Corps de la page ------------------------- */
+/* ############################## Body ############################### */
+/* Style du coprs des pages */
+body {
+    background-color : rgb(242, 242, 242);
+    padding : 0%;
+    margin : 0%;
+}
+/* ################################################################### */
+
+/* ############################# Footer ############################## */
+/* Style sur le footer des pages */
+footer {
+    bottom : 0; /* Fixe le footer au bas de la page */
+    height : 460px; /* Hauteur du pied de la page */
+    background-color : rgb(0, 0, 0);
+    padding : 0%;
+    display : flex;
+    justify-content : space-around;
+    section {
+        flex : 1;
+        padding : 20px;
+        width : 30%;
+        box-sizing : border-box;
+        color : rgb(255, 255, 255);
+    }
+}
+
+/* Style des listes de chaque section du footer */
+footer section ul {
+    margin-top : 45px;
+}
+
+/* Section contenant les logos du footer de la page */
+#section_logo {
+    display : flex;
+    flex-wrap : wrap;
+}
+
+/* Logo dans le footer */
+.logo {
+    height: 65px;
+    width : 65px;
+}
+
+/* Style des boutons du footer de la page */
+footer section a {
+    color : rgb(255, 255, 255);
+    text-decoration : none;
+}
+/* ################################################################### */
+/* ------------------------------------------------------------------- */

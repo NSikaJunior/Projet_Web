@@ -1,0 +1,172 @@
+/* ------------------------------------------------------------------- */
+/* ---------------- Style de la page d'accueil ----------------------- */
+/* -------------------------------------------------------------------- */
+
+/* ----------------------------- Slogan ------------------------------ */
+/* Style du slogan de la page */
+#slogan {
+    height : 230px;
+    width : 50vw;
+    margin-left : 5%;
+    margin-bottom : 1.5%;
+    font-family : "Panton_rust_heavy";
+    font-size : 70pt;
+}
+/* ------------------------------------------------------------------- */
+
+/* --------------------- Description du site ------------------------- */
+/* Style de la description du site */
+section div p {
+    line-height : 200%;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* ----------------------- Formes géométriques ----------------------- */
+/* Classe permettant de définir la taille des divs des sections du body */
+.taille {
+    width : 50vw; /* fixe la largeur de la division à la moitié de l'écran */
+    height : 50vh;
+    margin-top : 10px;
+}
+
+/* ############################# Forme 1 ############################## */
+/* Classe permettant de créer les figures géométriques -> Utilisation d'un identifiant */
+#forme {
+    width : 350px; /* Définition de la largeur de la forme */
+    max-height : 100%; /* Définition de la hauteur de la forme */
+    background-color : rgb(132, 205, 239);
+    border-top-left-radius : 4.5cm;
+    border-top-right-radius : 4.5cm;
+}
+/* ################################################################### */
+/* ############################# Donut1 ############################## */
+/* "Donut" qui sera commun à plusieurs page */
+
+.donut-container1
+{
+    position : absolute;
+    width : 100vw;
+    height : 50vh;
+    /* Position du container */
+    top : 100px;
+    right : 400px;
+    z-index : -1; /* Placement en arrière plan */
+    /* --------------------- */
+}
+
+.donut1
+{
+    /* Dimension du donut */
+    width : 200px;
+    height : 200px;
+    /* ------------------ */
+    margin : auto; /* Centre le donut horizontalement et verticalement */
+    border : 20px dashed #f1c40f; /* Couleur extérieure du donut */
+    border-radius : 50%; /* Fait de l'élément un cercle */
+    background-color : rgb(242, 242, 242); /* Couleur intérieure du donut */
+    position : relative;
+}
+  
+.donut1::before
+{
+    content : '';
+    position : absolute;
+    /* Position du trou intérieur */
+    top : 0px;
+    left : 0px;
+    /* -------------------------- */
+    /* Dimension */
+    width : 180px;
+    height : 180px;
+    /* --------- */
+    border : 10px solid rgb(242, 242, 242); /* Couleur intérieure du donut */
+    border-radius : 50%;
+    background-color : #f1c40f; /* Couleur extérieure du donut */
+}
+/* ################################################################### */
+
+/* ############################# Donut2 ############################## */
+/* "Donut" qui sera commun à plusieurs page */
+
+.donut-container2
+{
+    position : absolute;
+    width : 100vw;
+    height : 45vh;
+    /* Position du container */
+    top : 650px;
+    right : 500px;
+    z-index : -1; /* Placement en arrière plan */
+    /* --------------------- */
+}
+
+.donut2
+{
+    /* Dimension du donut */
+    width : 100px;
+    height : 100px;
+    /* ------------------ */
+    margin : auto; /* Centre le donut horizontalement et verticalement */
+    border : 30px solid rgb(132, 205, 239); /* Couleur extérieure du donut */
+    border-radius : 50%; /* Fait de l'élément un cercle */
+    background-color : rgb(242, 242, 242); /* Couleur intérieure du donut */
+    position : relative;
+}
+/* ################################################################### */
+
+/* ############################# Donut3 ############################## */
+/* "Donut" qui sera commun à plusieurs page */
+
+.donut-container3
+{
+    position : absolute;
+    width : 100vw;
+    height : 50vh;
+    /* Position du container */
+    top : 300px;
+    left : 150px;
+    z-index : -1; /* Placement en arrière plan */
+    /* --------------------- */
+}
+
+.donut3
+{
+    /* Dimension du donut */
+    width : 100px;
+    height : 100px;
+    /* ------------------ */
+    margin : auto; /* Centre le donut horizontalement et verticalement */
+    border : 30px solid rgb(132, 205, 239); /* Couleur extérieure du donut */
+    border-radius : 50%; /* Fait de l'élément un cercle */
+    background-color : rgb(242, 242, 242); /* Couleur intérieure du donut */
+    position : relative;
+}
+/* ################################################################### */
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------ Images ----------------------------- */
+/* Horloges */
+.horloge1 {
+    height : 150px;
+    width : 150px;
+    transform : rotate(20deg);
+    /* Position de l'image */
+    z-index : 1;
+    position : relative;
+    top : -20px;
+    left : 200px;
+    /* ------------------- */
+}
+
+.horloge2 {
+    height : 150px;
+    width : 150px;
+    transform : rotate(-20deg);
+    /* Position de l'image */
+    z-index : 1;
+    position : relative;
+    top : 300px;
+    left : -200px;
+    /* ------------------- */
+}

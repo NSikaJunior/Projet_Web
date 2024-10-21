@@ -1,0 +1,148 @@
+/* ------------------------------------------------------------------- */
+/* ------------- Style des éléments de la page tarifs ---------------- */
+/* ------------------------------------------------------------------- */
+
+/* ----------------------------- Tableau ----------------------------- */
+/* Style du tableau des tarifs */
+/* Tableau */
+table {
+    border : 5px dashed rgb(132, 205, 239);
+    border-radius : .5cm;
+    margin : auto;
+    padding : 10px;
+    /* Dimension du tableau */
+    width : 50vw;
+    max-width : 100%;
+    height : 500px;
+    max-height : 100%;
+    /* -------------------- */
+}
+
+/* Entête et corps du tableau */
+th, td {
+    border : solid ;
+    border-radius : .5cm;
+    margin : auto;
+    text-align : center;
+    font-size : 16pt;
+    font-weight : bold;
+}
+
+/* Position du tableau */
+body section div {
+    margin : auto;
+    padding : 20px;
+}
+
+
+/* Style du titre du tableau */
+.title {
+    font-family : 'Panton_rust_heavy';
+    text-align : center;
+    font-size : 70pt;
+    margin : auto;
+}
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------ Formes ----------------------------- */
+/* ############################# Donut1 ############################## */
+/* "Donut" qui sera commun à plusieurs page */
+
+.donut-container1
+{
+    position : absolute;
+    width : 100vw;
+    /* Position du container */
+    top : 0;
+    left : -20;
+    z-index : -1; /* Placement en arrière plan */
+    /* --------------------- */
+}
+
+.donut1
+{
+    /* Dimension du donut */
+    width : 200px;
+    height : 200px;
+    /* ------------------ */
+    margin : auto; /* Centre le donut horizontalement et verticalement */
+    border : 20px dashed #f1c40f; /* Couleur extérieure du donut */
+    border-radius : 50%; /* Fait de l'élément un cercle */
+    background-color : rgb(242, 242, 242); /* Couleur intérieure du donut */
+    position : relative;
+}
+  
+.donut1::before
+{
+    content : '';
+    position : absolute;
+    /* Position du trou intérieur */
+    top : 10px;
+    left : 10px;
+    /* -------------------------- */
+    /* Dimension */
+    width : 180px;
+    height : 180px;
+    /* --------- */
+    border : 20px solid rgb(242, 242, 242); /* Couleur intérieure du donut */
+    border-radius : 50%;
+    background-color : #f1c40f; /* Couleur extérieure du donut */
+}
+/* ################################################################### */
+
+/* ############################# Donut2 ############################## */
+/* "Donut" qui sera commun à plusieurs page */
+
+.donut-container2
+{
+    position : absolute;
+    width : 100vw;
+    /* Position du container */
+    top : 450px;
+    right : 500px;
+    z-index : -1; /* Placement en arrière plan */
+    /* --------------------- */
+}
+
+.donut2
+{
+    /* Dimension du donut */
+    width : 100px;
+    height : 100px;
+    /* ------------------ */
+    margin : auto; /* Centre le donut horizontalement et verticalement */
+    border : 30px solid rgb(132, 205, 239); /* Couleur extérieure du donut */
+    border-radius : 50%; /* Fait de l'élément un cercle */
+    background-color : rgb(242, 242, 242); /* Couleur intérieure du donut */
+    position : relative;
+}
+/* ################################################################### */
+
+/* ############################# Donut3 ############################## */
+/* "Donut" qui sera commun à plusieurs page */
+
+.donut-container3
+{
+    position : absolute;
+    width : 100vw;
+    /* Position du container */
+    top : 300px;
+    left : 150px;
+    z-index : -1; /* Placement en arrière plan */
+    /* --------------------- */
+}
+
+.donut3
+{
+    /* Dimension du donut */
+    width : 100px;
+    height : 100px;
+    /* ------------------ */
+    margin : auto; /* Centre le donut horizontalement et verticalement */
+    border : 30px solid rgb(132, 205, 239); /* Couleur extérieure du donut */
+    border-radius : 50%; /* Fait de l'élément un cercle */
+    background-color : rgb(242, 242, 242); /* Couleur intérieure du donut */
+    position : relative;
+}
+/* ################################################################### */
+/* ------------------------------------------------------------------- */

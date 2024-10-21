@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------------- */
+/* ------------------- Style de la page des cours -------------------- */
+/* ------------------------------------------------------------------- */
+
+/* --------------------------- Sélecteurs ---------------------------- */
+/* ############################# Section ############################# */
+/* Section contenant les sélecteurs */
+#section_sel {
+  display : flex;
+  flex-wrap : nowrap;
+  justify-content : space-around;
+}
+/* ################################################################### */
+
+/* ############################ Sélecteur ############################ */
+/* Style des sélecteurs de la page */
+select {
+  background-color : rgb(255, 255, 255);
+  color : rgb(0, 0, 0);
+  font-size : 12pt;
+  border : none;
+  border-radius : 5cm;
+}
+
+/* Style des options désactivées des sélecteurs */
+section div select option:disabled {
+  color : rgb(255, 255, 255);
+}
+
+/* Style des titres des sélecteurs */
+label {
+  display : block;
+  font-size : 14pt;
+  font-weight : bold;
+  text-align : center;
+}
+
+/* Division contenant le bouton de validation */
+.bouton_val {
+  text-align : center;
+  padding : 1%;
+  background-color: rgb(201, 235, 189);
+  color : rgb(0, 0, 0);
+  margin : auto;
+  border: solid 3px rgb(0, 0, 0);
+  border-radius : 1cm;
+  font-size : 12pt;
+}
+
+.bouton_val:hover{
+  color : rgb(132, 205, 239);
+  border-color : rgb(132, 205, 239);
+  cursor : pointer;
+}
+/* ################################################################### */
+/* ------------------------------------------------------------------- */
+
+.infos_profs {
+  font-size : 12pt;
+  text-align : center;
+  margin : auto;
+}

@@ -1,0 +1,32 @@
+/* -------------------------------------------------------------------------- */
+/* ------------------- Style de la page a propos de nous -------------------- */
+/* -------------------------------------------------------------------------- */
+/* Style de l'affichage des sections */
+.aff_section {
+    margin : auto;
+    padding : 2%;
+    h2 {
+        font-size : 25pt;
+        text-align : center;
+    }
+}
+
+/* Style de la section contact */
+#contact {
+    margin : auto;
+    text-align : center;
+}
+
+/* Style des images */
+.image_et {
+    width : 25%;
+    height : 25%;
+    box-shadow : 0px 0px 8px rgb(0, 0, 0);
+    border-radius : .25cm;
+}
+
+/* Style du paragraphe descriptif */
+#team {
+    text-align : center;
+}
+/* -------------------------------------------------------------------------- */

@@ -1,0 +1,127 @@
+/* ------------------------------------------------------------------- */
+/* ------------------- Style de la page connexion -------------------- */
+/* ------------------------------------------------------------------- */
+
+/* Cette page css permet de gérer les éléments de la page de connexion */
+
+/* ----------------------------- Slogan ------------------------------ */
+/* Style du pseudo-slogan */
+
+/* ------------------------------------------------------------------- */
+
+/* --------------------------- Conception ---------------------------- */
+/* Style de la section contenant les divs */
+#section_connexion {
+    margin : auto;
+    padding : 1%;
+    display : flex;
+    align-content : center;
+    justify-content : center;
+}
+
+/* Style des divisions pour les espaces de connexion d'inscription */
+.style {
+    margin : 1%;
+    border-radius : 2cm;
+    background-color : rgb(132, 205, 239);
+    width : 50%;
+}
+
+/* Style des formulaires des divisions */
+section div form {
+    margin : auto;
+    text-align : center;
+}
+
+/* Style des entrées du formulaire */
+section div form input {
+    width : 200px;
+    height : 30px;
+    margin : 2px;
+    background-color: rbg(242, 242, 242);
+    border-radius : .75cm;
+    border : none;
+    margin-bottom : 10px;
+}
+
+/* Style sur les labels des champs à remplir */
+label {
+    display : block;
+    margin-bottom : 2px;
+}
+/* ------------------------------------------------------------------- */
+
+/* ---------------------------- Matières ----------------------------- */
+/* Style de la fenêtre modale */
+.modal {
+    display : none; /* Fenêtre non affichée au départ */
+    position : fixed;
+    top : 0;
+    left : 0;
+    /* Dimension de la fenêtre modale et du fond */
+    /* Occupe 100% de l'espace */
+    width : 100%;
+    height : 100%;
+    /* ------------------------------ */
+    background-color : rgba(0, 0, 0, .5); /* Fond semi-transparent pour assombrir le contenu derrière */
+}
+
+/* Style du contenu de la fenêtre */
+#modal-content {
+    background-color : rgb(255, 255, 255);
+    padding : 20px;
+    margin : 10% auto; /* Centre verticalement, 10% du haut */
+    width : 700px;
+    border-radius : .25cm;
+    box-shadow : 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#subContent {
+    display : grid;
+    grid-template-columns : repeat(2, 1fr);
+    gap : 10px;
+    justify-content : space-around;
+    align-items : start;
+}
+
+/* Classe qui permet de centrer les éléments des sous-divisions de la fenêtre modale */
+.centrer {
+    text-align : center;
+}
+
+/* Style icônes des matières */
+.icone {
+    height : 50px;
+    width : 50px;
+}
+
+/* Style du bouton de fermeture de la page modale */
+#close {
+    background-color : rgb(201, 235, 189);
+    border : 3px solid rgba(0, 0, 0);
+    border-radius : .5cm;
+    margin : auto;
+    font-size : 12pt;
+}
+  
+#close:hover {
+    color : rgb(255, 0, 0);
+    border-color : rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+/* Style du bouton de validation */
+.bouton_val {
+    background-color : rgb(201, 235, 189);
+    border : 3px solid rgba(0, 0, 0);
+    border-radius : .5cm;
+    margin : auto;
+    font-size : 12pt;
+}
+
+.bouton_val:hover {
+    color : rgb(132, 205, 239);
+    border-color : rgb(132, 205, 239);
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------- */

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang = "fr">
+
+<head>
+    <title>Connexion - BenkyōRoom</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // Lien de la page de style des éléments généraux // -->
+    <link rel = "stylesheet" media = "screen" type = "text/css" href = "../css/style_elements_generaux.css">
+    <!-- // Lien de la page de style en css pour la page connexion // -->
+    <link rel = "stylesheet" media = "screen" type = "text/css" href = "../css/style_connexion.css">
+    <!-- // Lien de la page JS de la page connexion // -->
+    <script src = "/js/Script.js"></script>
+</head>
+
+<!-- // Corps de la page // -->
+<body>
+    <!-- // Tête de la page // -->
+    <!-- // Utilisation de la classe bannière // -->
+    <header>
+
+      <div>
+          <!-- // Logo et nom du site // -->
+          <div>
+              <a href = "Accueil.html">
+                <img alt = "Logo du site" src = "../img/books_223633.png" height = "80" width = "80">                  <h1>BenkyōRoom</h1>
+              </a>
+          </div>
+
+          <!-- // Lien vers la page d'accueil // -->
+          <a href = "Accueil.html">Accueil</a>
+
+          <!-- // Lien vers la page des cours // -->
+          <a href = "Cours.html">Cours</a>
+
+          <!-- // Lien vers la page des tarifs // -->
+          <a href = "Tarifs.html">Tarifs</a>
+          
+          <!-- // Lien vers la page pour devenir tuteur // -->
+          <a href = "DevenirTuteur.html" class = "bouton_ban">Donner des cours</a>
+
+          <!-- // Lien vers la page de connexion // -->
+          <a href = "Connexion.html" class = "bouton_ban">Connexion</a>
+      </div>
+  </header>
+    
+    <section>
+    <!-- // Pseudo-slogan pour la page // -->
+    <p style = "text-align : center; margin-top : 2%; margin-bottom : 2%;"><span style = "font-size : 70pt; font-family : Panton_rust_heavy;">Let's start !</span></p>
+
+    <!-- // Espace de connexion ou/inscription au site // -->
+    <section id = "section_connexion">
+
+      <!-- // Espace pour se connecter // -->
+      <div class = "style">
+        <h2 style = "text-align : center;">Connexion</h2>
+        <!-- // Champs de remplissage pour se connecter // -->
+        <form action = "connexion.php" method = "post">
+          <div class = "form-group">
+            <label for = "email">Email :</label>
+            <!-- // Vérifier si l'entrée est vide ou correspond à une adresse mail // -->
+            <input type = "email" name = "email" id = "email1" required>
+          </div>
+        
+          <div class = "form-group">
+            <label for = "mot_de_passe">Mot de passe :</label>
+            <!-- // Vérifier si l'entrée n'est pas vide // -->
+            <input type = "password" name = "mot_de_passe" id = "mot_de_passe" required>
+          </div>
+          <button type = "submit" class = "bouton_val">Se connecter</button>
+        </form>  
+      </div>
+
+      <!-- // Espace pour s'inscrire // -->
+      <div class = "style">
+        <h2 style = "text-align : center;">Inscription</h2>
+        <!-- // Champs de remplissage pour s'inscrire // -->
+        <form action = "inscription.php" method = "post" id = "fomulaireInscription">
+    
+          <div class = "form-group">
+            <label for = "nom">Nom :</label>
+            <input type = "text" name = "nom" id = "nom" required>
+          </div>
+        
+          <div class = "form-group">
+            <label for = "prenom">Prénom :</label>
+            <input type = "text" name = "prenom" id = "prenom" required>
+          </div>
+        
+          <div class = "form-group">
+            <label for = "email">Email :</label>
+            <input type = "email" name = "email" id = "email" required>
+          </div>
+        
+          <div class = "form-group">
+            <label for = "telephone">Téléphone :</label>
+            <input type = "tel" name = "telephone" id = "telephone" required>
+          </div>
+
+          <!-- // Formulaire pour choisir son niveau // -->
+          <div class = "form-group">
+            <label for = "niveau">Niveau :</label>
+            <select name = "niveau" id = "niveau" required>
+              <option>Licence 1</option>
+              <option>Licence 2</option>
+              <option>Licence 3</option>
+              <option>Master 1</option>
+              <option>Master 2</option>
+              <option>BTS</option>
+              <option>Bachelor</option>
+              <option>BUT</option>
+              <option>DUT</option>
+            </select>
+          </div>
+              
+          <button onclick = "afficherFenetreModale()" style = "margin : 2%;" class = "bouton_val">S'inscrire</button>
+        </form>
+
+        <!-- // Fenetre dans laquelle se trouve le formulaire pour choisir les matières à étudier // -->
+        <div id = "modal" class = "modal">
+          <!-- // Contenu de la fenêtre // -->
+          <div id = "modal-content">
+            <p><span style = "text-align : center; font-size : 14pt;">Choisis tes matières favorites :</span></p>
+
+            <div id = "subContent">
+              <!-- // Informatique générale //-->
+              <div class = "centrer">
+                <label for = "generalComputerScience">Informatique générale</label>
+                <img src = "../img/icones_matiere/bot_6975353.png" alt = "InformatiqueGenerale" id = "generalComputerScience" class = "icone">
+              </div>
+                  
+              <!-- // Mathématiques // -->
+              <div class = "centrer">
+                <label for = "maths">Mathématiques</label>
+                <img src = "../img/icones_matiere/calculating_1739515.png" alt = "Mathématiques" id = "maths" class = "icone">
+              </div>
+
+              <!-- // Mathématiques appliquées // -->
+              <div class = "centrer">
+                <label for = "appliedMaths">Mathématiques appliquées</label>
+                <img src = "../img/icones_matiere/mobile-phone_4393829.png" alt = "Mathématiques appliquées" id = "appliedMaths" class = "icone">
+              </div>
+
+              <!-- // Physique et électronique //-->
+              <div class = "centrer">
+                <label for = "physics">Physique et électronique</label>
+                <img src = "../img/icones_matiere/defibrillator_2865379.png" alt = "Physique et électronique" id = "physics" class = "icone">
+              </div>
+
+
+              <!-- // Anglais //-->
+              <div class = "centrer">
+                <label for = "english">Anglais</label>
+                <img src = "../img/icones_matiere/eng_5309804.png" alt = "Anglais" id = "english" class = "icone">
+              </div>
+
+              <!-- // Gestion financière // -->
+              <div class = "centrer">
+                <label for = "financial">Gestion Financière</label>
+                <img src = "../img/icones_matiere/financial-database_9202752.png" alt = "Gestion financière" id = "financial" class = "icone">
+              </div>
+
+              <!-- // Dissertation et communication // -->
+              <div class = "centrer">
+                <label for = "communication">Dissertation et communication</label>
+                <img src = "../img/icones_matiere/group_745205.png" alt = "Dissertation et Communication" id = "communication" class = "icone">
+              </div>
+            </div>
+
+            <!-- // Division contenant les boutons // -->
+            <div style = "text-align : center; margin-top : 20px;">
+              <!-- // Bouton de validation de l'inscription // -->
+              <button type = "submit" class = "bouton_val">Valider l'inscription</button>
+              <!-- // Bouton de fermeture de la fenêtre modale // -->
+              <button id = "close" onclick = "fermerFenetreModale()">Retourner</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- // Footer de la page // -->
+  <footer>
+    <!-- // Section contenant les différents liens présents dans le footer, renvoyant vers les autres pages du site // -->
+    <section>
+      <!-- // Lien vers la page "A Propos" // -->
+      <a href = "/html/AProposDeNous.html">
+        <!-- // Placement du texte au milieu du footer // -->
+        <h3 style = "text-align : center;">À propos de nous</h3>
+      </a>
+    </section>
+
+    <section id = "section_liens">
+      <h3>Site :</h3>
+      <ul style = "list-style : disc;">
+        <li><a href = "/html/Cours.html">Cours</a></li>
+        <li><a href = "/html/DevenirTuteur.html">Devenir tuteur</a></li>
+        <li><a href = "/html/Tarifs.html">Tarifs</a></li>
+      </ul>
+    </section>
+
+    <!-- // Section sur nos valeurs // -->
+    <section>
+      <h3>Nos valeurs :</h3>
+        <ul style = "list-style : disc;">
+          <li><a href = "#">Qualité</a></li>
+          <li><a href = "#">Professionnalisme</a></li>
+          <li><a href = "#">Accessibilité</a></li>
+          </ul>
+    </section>
+
+    <!-- // Section sur les informations de contact // -->
+    <section>
+      <h3>Nous contacter :</h3>
+          <ul style = "list-style : disc;">
+            <li><a href = "#">Contactez-nous</a></li>
+            <li><a href = "#">00 01 02 03 04</a></li>
+            <li><a href = "#">info@benkyoroom.fr</a></li>
+          </ul>
+    </section>
+
+    <!-- // Section des mentions légales // -->
+    <section>
+      <h3 style = "margin-bottom : 16px;">Mentions légales :</h3>
+      <a href = "#">Mentions légales</a>
+    </section>
+
+    <!-- // Section sur la politique de confidentialité // -->
+    <section>
+      <h3 style = "margin-bottom : 45px;">Confidentialité :</h3>
+      <a href = "#">Politique de confidentialité</a>
+    </section>
+
+    <!-- // Section des logos de nos réseaux sociaux // -->
+    <section >
+      <h3>Suivez-nous :</h3>
+
+      <div id = "section_logo">
+        <!-- // Logo Linkedin // -->
+        <a href = "#">
+          <img src = "../img/logos/linkedin.png" alt = "Logo Linkedin" class = "logo">
+        </a>
+
+        <!-- // Lodo de Twitter // -->
+        <a href = "#">
+          <img src = "../img/logos/twitter.png" alt = "Logo de Twitter" class = "logo">
+        </a>
+
+        <!-- // Logo de Facebook // -->
+        <a href = "#">
+          <img src = "../img/logos/facebook.png" alt = "Logo de Facebook" class = "logo">
+        </a>
+
+        <!-- // Logo de YouTube // -->
+        <a href = "#">
+          <img src = "../img/logos/logo_youtube.png" alt = "Logo de YouTube" class = "logo">
+        </a>
+
+        <!-- // Logo d'Instagram // -->
+        <a href = "#">
+          <img src = "../img/logos/instagram.png" alt = "Logo d'Instagram" class = "logo">
+        </a>
+
+      </div>
+    </section>
+
+  </footer>
+</body>

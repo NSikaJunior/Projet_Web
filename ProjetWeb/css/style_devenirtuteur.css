@@ -1,0 +1,85 @@
+/* -------------------------------------------------------------------------- */
+/* ------------------- Style de la page donner des cours -------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- Slogan ---------------------------------- */
+#titre {
+  font-family : Panton_rust_heavy;
+  font-size : 70pt;
+  margin : auto;
+}
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------- Corps de la page ----------------------------- */
+/* ############################### Section 1 ################################ */
+/* Style sous-titre */
+#sous_titre {
+  font-family : "Poppins_italic";
+  font-size : 40pt;
+}
+/* Style de l'image botanical */
+#img_botanical {
+  width : 300px;
+  height : 300px;
+  margin : auto;
+}
+/* ########################################################################## */
+
+/* ############################### Formulaire ############################### */
+/* Style du formulaire */
+#style_form {
+  width : 50%;
+  border-radius : 2cm;
+  margin : 2%;
+  padding : 10px;
+  text-align : center;
+  background-color : rgb(132, 205, 239);
+}
+
+#content {
+  text-align : center;
+}
+
+/* Style sur les labels des champs à remplir */
+label {
+  display : block;
+  margin-bottom : 2px;
+  text-align : center;
+}
+
+/* Style des entrées du formulaire */
+input {
+  width : 200px;
+  height : 30px;
+  margin : 2px;
+  background-color: rbg(242, 242, 242);
+  border-radius : .75cm;
+  border : none;
+  margin-bottom : 10px;
+}
+
+/* Style de l'image avec l'enseigante */
+#img_teacher {
+  width : 150px;
+  height : 150px;
+}
+
+.champ-vide {
+  color : rgb(255, 0, 0);
+}
+
+/* Style bouton validation inscription */
+#bouton_inscription {
+  background-color : rgb(201, 235, 189);
+  border : 3px solid rgba(0, 0, 0);
+  border-radius : .5cm;
+  margin : auto;
+  font-size : 12pt;
+}
+
+#bouton_inscription:hover {
+  color : rgb(132, 205, 239);
+  border-color : rgb(132, 205, 239);
+  cursor: pointer;
+}
+/* ########################################################################## */
